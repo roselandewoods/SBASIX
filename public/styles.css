@@ -1,0 +1,23 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 5%, 68%);
+}
+
+h1 {
+    color: #141313;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #185c35;
+    border-radius: 5px;
+    
+}
+
+.todo-item p {
+    margin: 0;
+}
+
+

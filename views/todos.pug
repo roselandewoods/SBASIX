@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title To dos
+     link(rel='stylesheet', href='/stylesheets/styles.css')
+  body
+    h1 To dos
+    form(action='/todos', method='GET')
+      input(type='text', name='task', placeholder='Filter by task')
+      select(name='status')
+        option(value='') All Statuses
+        option(value='completed') Completed
+        option(value='pending') Pending
+      button(type='submit') Filter
+    ul
+      each todo in todos
+        li
+          p Task: #{todo.task}
+          p Status: #{todo.status}
+          form(action=`/todos/${todo.id}`, method='POST')
+        input(type='hidden', name='_method', value='DELETE')
+        button(type='submit') Delete
+//ENCOUNTERING ERROR WITH DELETE BUTTON 

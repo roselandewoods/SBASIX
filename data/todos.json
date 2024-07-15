@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "task": "Buy groceries",
+    "status": "completed"
+  },
+  {
+    "id": 2,
+    "task": "Book dinner reservations",
+    "status": "completed"
+  },
+  {
+    "id": 3,
+    "task": "Cancel Nexflix subscription",
+    "status": "pending"
+  },
+  {
+    "id": 4,
+    "task": "Register Sarai for Cheer",
+    "status": "pending"
+  },
+  {}
+]

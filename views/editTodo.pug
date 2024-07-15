@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title Edit Todo
+    link(rel='stylesheet', href='/css/styles.css')
+  body
+    h1 Edit Todo
+    form(action=`/todos/edit/${todo.id}`, method='post')
+      label(for='task') Task:
+      input(type='text', id='task', name='task', value=todo.task, required)
+      label(for='status') Status:
+      select(id='status', name='status')
+        option(value='pending', selected=todo.status === 'pending') Pending
+        option(value='completed', selected=todo.status === 'completed') Completed
+      button(type='submit') Update
+    a(href='/todos') Back to Todos
